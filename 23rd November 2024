@@ -1,0 +1,530 @@
+// Default perameter =>
+
+
+    // function sum(a , b = 0){                // b is dfault perameter
+    //     return a + b;
+    // }
+    // console.log( sum(5 , 6) );
+
+
+
+
+
+
+
+
+// 1. Create a function greet that takes two positional arguments: name and greeting, and returns a personalized greeting message
+
+//  function greet(a , b){
+//     return `${a} ${b} , How are you?`
+//  }
+
+//  console.log( greet("Hello" , "Alice") );
+
+
+
+
+
+
+
+
+// 2. Write a function calculatePrice that takes two arguments: price and taxRate. If taxRate is not provided, it should default to 5%.
+
+// let price = 100;
+// console.log( calculate(1000 , 10) );
+
+
+// function calculate(price , taxrate = 5 ){
+    
+//      return price - (price * taxrate/100);
+// }
+
+
+
+
+
+
+
+// 3. Create a function sumNumbers that takes an unknown number of arguments using the rest operator and returns their sum.
+
+
+// console.log( sumNumbers(2,5,6,3,2) );
+
+// function sumNumbers( ...a ){ 
+//     return a.reduce( (a , c) => a + c )
+// }
+
+
+
+
+
+
+// 4. Create a function introduce that takes three positional arguments: firstName, lastName, and age, and returns a sentence introducing the person.
+
+// let firstName = "Mayank";
+// let lastName = "Panwar";
+// let age = 18;
+
+// console.log( greet(firstName , lastName , age) );
+
+
+// function greet(a , b , c){
+//     return `Hello I'm ${a} ${b} . My age is ${c} .`
+// }
+
+
+
+
+
+
+// 5. Write a function makeSandwich that takes two arguments: breadType and filling. The default value for breadType should be "whole wheat".
+
+// function makeSandwich(filling , breadType = "whole wheat"){
+//     return `"I take a ${breadType} bread and added a delicious ${filling} filling to make my sandwich."`
+// }
+
+// console.log( makeSandwich( "butter" , ));
+
+
+
+
+
+
+
+// 6. Create a function multiply that takes two positional arguments x and y, with a default value for y as 1, and returns the result of multiplying them.
+
+
+// function multiply(x , y = 1){
+//     return x * y;
+// }
+
+// let x = 4;
+// let y;
+// console.log( multiply(x , y) );
+
+
+
+
+
+
+
+// 7. Write a function getTotalPrice that takes an unknown number of prices as arguments using the rest operator and returns the total price.
+
+// let sum = 0;
+
+// function getTotalPrice(...a){
+
+//     for(i of a){
+//         sum += i;
+//     }
+//     return `Total Price is ${sum} INR`;
+// }
+
+// let a = 100 , b = 499 , c = 300 , d = 999;
+// console.log( getTotalPrice(a , b, c, d) );
+
+
+
+
+
+// 8. Create a function buildSentence that accepts three arguments: subject, verb, and object. If no object is passed, it should default to "something".
+
+
+// function buildSentence( subject , verb , object = "something"){
+//     return `${subject} ${verb} ${object}`
+
+// }
+
+// let subject = "She" , verb = "reads" , Object = "a book";
+// console.log( buildSentence(subject , verb , Object) );
+
+
+
+
+
+// 9. Write a function addNumbers that takes an unknown number of numbers using the rest operator and returns the sum.
+
+// function addNumbers(...num){
+//     return num.reduce( (a , c) => a + c )
+// }
+
+// console.log(addNumbers(23,54,24,75));
+
+
+
+
+
+// 10. Create a function displayInfo that takes three arguments: name, age, and city. If no city is provided, it should default to "Unknown".
+
+// function displayInfo(name , age , city = "Unknown"){
+//     return `Hello my name is ${name} and I'm ${age} year old . I'm from ${city} city`
+// }
+
+// console.log( displayInfo("Mayank" , 18) );
+
+
+
+
+
+
+// 11. Write a function orderPizza that takes two arguments: size and topping. If no topping is provided, it should default to "cheese".
+
+// const orderPizza = ((size , topping = "cheese") => {
+//     return `I ordered a ${size} size pizza with ${topping} as a topping`;
+// })
+
+// console.log( orderPizza("medium" ) );
+
+
+
+
+
+
+// 12. Create a function makeCoffee that takes one required argument type and an unknown number of optional ingredients using the rest operator.
+
+//   function makeCoffee(type , ...ingredients){
+//     return `Make a ${type} coffee with ingredients ${ingredients.join(' , ')}`
+//   }
+
+//   console.log(makeCoffee('Latte' , 'Sugar' , 'Milk'));
+  
+
+
+
+// 13. Write a function introducePerson that takes two positional arguments name and profession, with profession defaulting to "Student".
+
+// const introducePerson = ( (name , profession = "student") => `Hello everyone , my name is ${name} and I'm a ${profession} ` )
+
+// console.log( introducePerson("Mayank" , "Web Devloper") );
+
+
+
+
+
+
+// 14. Create a function findMax that accepts an unknown number of numbers using the rest operator and returns the maximum value.
+
+// const findMax = ( (...a) =>{
+    
+//     let max = a[0];
+//     for(val of a){
+//         if(max < val){
+//             max = val;
+//         }
+//     }
+//     return max;
+    
+// } )
+// console.log( findMax(23,54,75,86,23));
+
+
+
+
+
+
+// 15. Write a function buildPerson that takes two arguments: firstName and lastName, and returns an object representing the person.
+
+
+// const buildPerson = ( (firstName , lastName) => {
+
+//     return  {
+//         firstName,
+//         lastName
+//     }
+    
+// } )
+
+// const prs = ( buildPerson("Mayank" , "Panwar"));
+// console.log(prs);
+
+// console.log(typeof prs);
+
+// --
+
+// const fun1 = function( firstName , secondName ){
+
+//     return {
+//         firstName,
+//         secondName
+//     };
+
+// }
+
+// const obj = fun1( "Krishna" , "soni" );
+
+// console.log( obj );
+// console.log(typeof obj);
+
+
+
+
+
+
+
+// 16. Create an object car with primitive properties: brand, model, and year.
+
+// const car = {
+//     brand: "C-Class",
+//     model: "Mercedes-Benz",
+//     year: 2024
+// }
+
+// console.log( car);
+
+
+
+
+
+
+// 17. Create an object book with non-primitive properties: title, author, and reviews (where reviews is an array of review objects).
+
+
+// const book = {
+//     title: "Atomic Habits",
+//     author: "James Clear",
+//     reviews: ["Atomic Habits is a game-changer." , "While the book offers great strategies, it feels repetitive at times." , "It’s a good read for someone starting their personal development journey."]
+// }
+
+// console.log(book);
+
+
+
+
+
+// 18. Create an object laptop with both primitive (brand, price) and non-primitive (features - an array) properties.
+
+// const laptop = {
+//     brand: "Apple MacBook",
+//     price: 80000 ,
+//     features: ["Premium aluminum unibody construction." , "High resolution: Up to 6K external display support." , "Long-lasting battery: Up to 22 hours (MacBook Air M2)."]
+// }
+
+// console.log(laptop.features);
+
+
+
+
+
+
+
+
+
+// 19. Create an object person with a method greet that prints a greeting message using the name property.
+
+
+// const person = {
+//     name: "Mayank Panwar",
+//     greet: function(){
+//         console.log(`Hello everyone my name is ${this.name}`);
+        
+//     }
+// }
+// console.log(person.greet());
+
+
+
+// 20. Write a function buildTeam that takes an unknown number of team members using the rest operator and returns an array of their names.
+
+
+// const buildTeam = ( (...a) =>{
+//             return a;
+// } )
+// const arr =  buildTeam("Mayank" , "Rohit" , "Deepak");
+// console.log(arr);
+// console.log(typeof arr);
+
+
+
+
+// 21 Create a function discountPrice that takes two positional arguments: price and discountPercentage. If no discount is provided, it should default to 10%.
+
+
+// function discountPrice(price , discount = 10){
+//      return price * (1 - (discount / 100));
+// }
+// console.log( discountPrice(100));
+
+
+
+// function discountPrice(price , discount = 10 ){
+    
+//      return price - (price * discount/100);
+// }
+// console.log( discountPrice(100));
+
+
+
+
+
+
+
+// 22. Write a function describePet that accepts two arguments: petName and petType. If no petType is provided, it should default to "dog".
+
+
+// function describePet(name , type = 'dog'){
+//     return `My pet's name is ${name} and it is a ${type}.`;
+// }
+// console.log(describePet('Prince') );
+
+
+
+
+
+
+
+// 23. Create a function calculateArea that accepts two arguments: length and width. If width is not provided, it should default to the same value as length (for a square).
+
+
+// function calculateArea(length , width = length){
+//     return `Area : ${length * width}`
+// }
+// console.log( calculateArea(20));
+
+
+
+
+
+
+// 24. Write a function joinStrings that accepts an unknown number of strings using the rest operator and returns them concatenated into one string.
+
+
+// function joinStrings(...strings) {
+//     // let result = '';
+//     // for (let str of strings) {
+//     //     result += str;
+//     // }
+//     // return result;
+
+
+//     return strings.join(' ')
+// }
+
+// console.log( joinStrings('Hello' , 'World'));
+
+
+
+
+
+
+
+// 25. Create a function createUserProfile that accepts three arguments: name, email, and role. If no role is provided, it should default to "user".
+
+
+// function createUserProfile(name, email, role = "user") {
+//     return {
+//         name: name,
+//         email: email,
+//         role: role
+//     };
+// }
+
+// console.log( createUserProfile("Mayank" , "mayank@google.com"));
+
+
+
+// 26. Write a function divideNumbers that takes two arguments: a and b, with b defaulting to 1 if not provided
+
+// function divideNumbers( a , b = 1){
+//     return a / b;
+// } 
+
+// console.log(divideNumbers(22 , 2));
+
+
+
+
+// 27. Create a function combineArrays that accepts an unknown number of arrays using the rest operator and returns one combined array.
+
+
+// function combineArrays(...arrays) {
+//     return arrays.flat();
+// }
+
+// const a = [1 , 2 , 3]
+// const b = [4 , 5 , 6]
+// const c = [7 , 8 , 9]
+// const d = combineArrays(a , b , c)
+// console.log(d);
+
+
+
+
+
+
+
+// 28. Write a function introduceEmployee that takes two positional arguments: employeeName and position, with position defaulting to "intern".
+
+
+// function introduceEmployee(name, email, role = "user") {
+//     return {
+//         name: name,
+//         role: role
+//     };
+// }
+// console.log( introduceEmployee('Mayank'));
+
+
+
+
+
+
+
+// 29. Create a function findAverage that takes an unknown number of scores using the rest operator and returns the average score.
+
+// function findAverage(...average){
+//     const sum = average.reduce( (a,c) => a + c , 0 )
+//     return sum / average.length
+// }
+
+// console.log( findAverage(45 , 39 , 57 , 85 , 77));
+
+
+
+
+
+
+// 30. Write a function buildCar that accepts three arguments: brand, model, and year. If no year is provided, it should default to the current year.
+
+// function buildCar(brand , model , year = 2024){
+//     return {
+//         brand: brand,
+//         modek: model,
+//         year: year
+//     }
+// }
+
+// console.log( buildCar('Toyota' , 'Corolla'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
